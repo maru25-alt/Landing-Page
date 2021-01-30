@@ -1,0 +1,57 @@
+/* Normal desktop :1200px. */
+$large_device: "(min-width: 1200px) and (max-width: 1500px)";
+
+/* Normal desktop :992px. */
+$mid_device: "(min-width: 992px) and (max-width: 1200px)";
+
+/* Tablet desktop :768px. */
+$tablet_device: "(min-width: 768px) and (max-width: 991px)";
+
+/* small mobile :320px. */
+$mobile_device: "(max-width: 767px)";
+
+/* Large Mobile :480px. */
+$large_mobile: "only screen and (min-width: 480px) and (max-width: 767px)";
+
+@media #{$mid_device} {
+}
+
+@media #{$tablet_device} {
+  .service {
+    background-color: $gold;
+    color: $black;
+    i {
+      color: $white !important;
+      opacity: 0.6;
+    }
+    &:hover {
+      color: $white !important;
+      opacity: 0.6;
+    }
+  }
+}
+
+@media #{$mobile_device} {
+  .navbar-collapse {
+    background-color: $black !important;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-link {
+    color: $white !important;
+    padding: 20px !important;
+    &:active,
+    &:hover {
+      background-color: $gold;
+    }
+  }
+
+  .header__text {
+    width: 80vw !important;
+    margin-top: 10vh !important;
+  }
+
+  .contact__form {
+    margin-top: 50px;
+  }
+}
